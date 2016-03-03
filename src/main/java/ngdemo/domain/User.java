@@ -9,8 +9,17 @@ public class User {
 
     private String firstName;
     private String lastName;
+    private boolean authorization;
 
-    public String getFirstName() {
+    public boolean isAuthorization() {
+		return authorization;
+	}
+
+	public void setAuthorization(boolean authorization) {
+		this.authorization = authorization;
+	}
+
+	public String getFirstName() {
         return firstName;
     }
 

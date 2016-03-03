@@ -12,4 +12,18 @@ services.factory('UserFactory', function ($resource) {
             isArray: false
         }
     })
+    
+   
+});
+
+
+services.factory('UserAuth', function ($resource) {
+   
+     return $resource('/ngdemo/rest/users/auth', {}, {
+        query: {
+            method: 'GET',
+            params: {},
+            isArray: false
+        }
+    })
 });

@@ -4,5 +4,6 @@
 angular.module('ngdemo', ['ngdemo.filters', 'ngdemo.services', 'ngdemo.directives', 'ngdemo.controllers']).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
+        $routeProvider.when('/landingPage', {templateUrl: 'partials/landingPage.html', controller: 'mainCtrl'});
         $routeProvider.otherwise({redirectTo: '/view1'});
     }]);

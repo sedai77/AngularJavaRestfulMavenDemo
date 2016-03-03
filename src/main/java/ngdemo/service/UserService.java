@@ -8,6 +8,7 @@ public class UserService {
         User user = new User();
         user.setFirstName("Shyam");
         user.setLastName("Sedai");
+        user.setAuthorization(true);
         return user;
     }
 }

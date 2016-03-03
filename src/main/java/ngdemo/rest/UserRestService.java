@@ -18,4 +18,12 @@ public class UserRestService {
         UserService userService = new UserService();
         return userService.getDefaultUser();
     }
+    
+    @GET
+    @Path("/auth")
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getUserAuthJSON() {
+    	UserService userService = new UserService();
+    	 return userService.getDefaultUser();
+    }
 }
